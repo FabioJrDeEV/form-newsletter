@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #36384D;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    width: 700px;
+    height: 450px;
+    margin: 150px auto;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container form {
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 30px 35px;
+    flex: 1;
+}
+
+.container form h1 {
+    font-size: 40px;
+    color: black;
+    margin-bottom: 14px;
+
+}
+
+.container form p {
+    font-size: 14px;
+    max-width: 500px;
+    margin-bottom: 14px;
+}
+
+.container form ul {
+    margin-bottom: 24px;
+    list-style-type: none;
+}
+
+.container form ul svg {
+    margin-right: 8px;
+}
+
+.container form li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.container .imagem {
+    margin: 18px auto;
+    flex: 1;
+}
+
+.container .imagem img {
+    width: 280px;
+}
+
+.container .email {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.container .email label {
+    font-size: 11px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.container .email input {
+    padding: 13px 15px;
+    border-radius: 8px;
+    border: solid 1px lightgray;
+    outline: none;
+}
+
+.container form button {
+    padding: 18px 15px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    background-color: #36384D;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .6s;
+}
+
+.container form button:hover{
+    background: #ff5f7e;
+}
+.label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label-true {
+    display: none;
+}
+
+.label-true.label {
+    display: block;
+    color: red;
+}
+
+/*Logo abaixo vai a "container" que vai ser renderizado caso o email seja enviado com sucesso... */
+
+.agradecimentos {
+    margin: 180px auto;
+    width: 380px;
+    height: 400px;
+    background-color: white;
+    border-radius: 24px;
+    padding: 35px 35px;
+    display: none;
+}
+
+.agradecimentos h1 {
+    margin-top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.agradecimentos p {
+    font-size: small;
+    margin-top: 23px;
+    max-width: 400px;
+    line-height: 18px;
+}
+
+.agradecimentos .button {
+    margin: 20px auto;
+}
+
+.agradecimentos .button button {
+    padding: 15px 15px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+    background: #36384D;
+    color: white;
+    cursor: pointer;
+}
